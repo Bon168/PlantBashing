@@ -2,22 +2,49 @@
 echo "Hello welcome"
 echo "What is your name"
 read name
-$name
 echo "Welcome $name to our planting simulator"
-sleep 5
-exit 0
+sleep 3
 
-echo "Time to bigin our planting simulator"
-response = input("would you like to plant a new seed, yes or no")
 
-if response = "yes" then;
-echo (Let's begin our planting simulator)-
+echo "Time to begin our planting simulator"
+read -p "Would you like to plant a new seed? (yes/no): " response
+
+if [ "$response" == "yes" ]; then
+    echo "Let's begin our planting simulator!"
+fi
+
+if [ "$response" == "no" ]; then
+	echo "Good bye have a great day $name"
+fi
+
+
+
+
+if [ "$response" == "yes" ]; then
+	echo "$name you have dug a hole and planted a small seed of the size of 3"
 
 fi
 
-if response = "no" echo (Good bye have a great $name day)
-exit 
+if [ "$response" == "no" ]; then
+	echo "have a great day you bum"
 
-if yes echo "$name you have dug a hole and planted a small seed of the size of 3"
-if no echo "Good bye have a great day $name"
+fi
 
+	exit 0
+
+echo "Do you want to wait for your seed to grow"
+
+if [ "response" == "yes" ]; then
+	echo "wait 1 day"
+
+fi
+
+if [ "response" == "no" ]; then
+	echo "Goodbye"
+
+fi
+
+exit 3
+
+
+ 
