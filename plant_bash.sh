@@ -15,6 +15,7 @@ fi
 
 if [ "$response" == "no" ]; then
 	echo "Good bye have a great day $name"
+	exit 
 fi
 
 if [ "$response" == "yes" ]; then
@@ -24,6 +25,7 @@ fi
 
 if [ "$response" == "no" ]; then
 	echo "have a great day you bum"
+	exit
 fi
 echo "Do you want to wait for your seed to grow"
 
@@ -33,6 +35,7 @@ fi
 
 if [ "response" == "no" ]; then
 	echo "Goodbye"
+	exit
 fi
 
 echo "your seed will take 3 days to grow"
@@ -56,10 +59,8 @@ fi
 
 if [ $response == "no" ]; then
 	echo "All that for nothing"
-elif [[ condition ]]; then
-	#statements
-fi
-exit 3
+	exit
+
 
 echo "your plant has grown into a sapling"
 echo " Day 1 seed planted"
@@ -74,11 +75,84 @@ echo "Day 5 Nohting happened"
 wait 2
 echo "Day 6 Your plant has grown inot a sapling"
 
-echo "do you want continue to watching your sapling grow"
+echo "do you want continue to watching your sapling grow yes/no"
 
 if [ $response == "yes" ]; then 
-	echo ""
+	echo "Okay you are doing your sapling justice"
 
- 
+fi
+
+if [ $response == "no" ]; then
+	echo "your sapling is lost to time you lose"
+	exit 	
+fi
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then 
+	echo "After a day your plant has grown 2cms and your plant has grown 2 leaves"
+elif [ $response == "no" ]; then
+	echo "Your plant says your a L"
+fi
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant is now 4cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant his now 6cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant is now 8cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant is now 10cms and your plant now has 4 leaves"
+echo "do you want continue to watching your sapling grow yes/no"
+
+if [ $response == "yes" ]; then
+	echo "After a day your plant his now 12cms and your plant now has 4 leaves"
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant his now 14cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant is now 16cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant is now 4cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant is now 4cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant is now 4cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant is now 4cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "After a day your plant is now 4cms and your plant now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+ if [ $response == "yes" ]; then
+	echo "After a day your plant is now 4cms and your plant has now has 4 leaves"
+
+echo "do you want continue to watching your sapling grow yes/no"
+ if [ $response == "yes" ]; then
+	echo "After a day your plant is now 4cms and your plant has now has 4 leaves"
+
+
+echo "do you want continue to watching your sapling grow yes/no"
+ if [ $response == "yes" ]; then
+	echo "After a day your plant is now 4cms and your plant has now has 4 leaves"
+
 
  
