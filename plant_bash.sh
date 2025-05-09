@@ -39,25 +39,25 @@ if [ "response" == "no" ]; then
 fi
 
 echo "your seed will take 3 days to grow"
-wait 3 
+sleep 1
 echo "Your seed has germinated overnight"
-wait 2
+sleep 1
 echo "our current days"
-wait 2
+sleep 1
 echo " Day 1 seed planted"
-wait 2
+sleep 1 
 echo "Day 2 Nothing happened"
-wait 2
+sleep 1
 echo "Day 3 seed germinated overnight"
-wait 2
-read -p "Do you want to wait a 1 day or leave now" "response"
+sleep 1
+read -p "Do you want to wait a 1 day or leave now (wait/leave" "response"
 
-if [ $response == "yes" ]; then
+if [ $response == "wait" ]; then
 	echo "your young plant shall grow soon"
 
 fi
 
-if [ $response == "no" ]; then
+if [ $response == "leave" ]; then
 	echo "All that for nothing"
 	exit
 
@@ -77,6 +77,8 @@ echo "Day 6 Your plant has grown into a sapling"
 
 echo "do you want continue to watching your sapling grow yes/no"
 
+
+
 if [ $response == "yes" ]; then 
 	echo "Okay you are doing your sapling justice"
 
@@ -84,8 +86,13 @@ fi
 
 if [ $response == "no" ]; then
 	echo "your sapling is lost to time you lose"
-	exit 	
+	exit 
+else
+
 fi
+
+
+
 
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then 
@@ -93,7 +100,10 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ]; then
 	echo "Your plant says your a L"
 	exit
+else
 fi
+
+
 
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
@@ -101,6 +111,8 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
 fi
 
 
@@ -110,13 +122,20 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
 fi
+
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [ $response == "no" ] then
 	echo "Goodbye"
+else
 	exit
+
+
+
 fi
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
@@ -124,14 +143,20 @@ if [ $response == "yes" ]; then
 	elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
 fi
+
+
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 	elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
 fi
+
 
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
@@ -139,6 +164,9 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
+
 fi
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
@@ -146,6 +174,9 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
+
 fi
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
@@ -153,6 +184,9 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
+
 fi
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
@@ -160,6 +194,9 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
+
 fi
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
@@ -167,6 +204,9 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
+
 fi
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
@@ -174,6 +214,9 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
+
 fi
 echo "do you want continue to watching your sapling grow yes/no"
 if [ $response == "yes" ]; then
@@ -181,6 +224,9 @@ if [ $response == "yes" ]; then
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
+
 fi
 echo "do you want continue to watching your sapling grow yes/no"
  if [ $response == "yes" ]; then
@@ -188,14 +234,34 @@ echo "do you want continue to watching your sapling grow yes/no"
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
+
+
 fi
 echo "do you want continue to watching your sapling grow yes/no"
  if [ $response == "yes" ]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [ $response == "no" ] then
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then 
+	echo "After a day your plant has grown 2cms and your plant has grown 2 leaves"
+elif [ $response == "no" ]; then
+	echo "Your plant says your a L"
+	exit
+else
+fi
+
+
+
+echo "do you want continue to watching your sapling grow yes/no"
+if [ $response == "yes" ]; then
+	echo "Af
 	echo "Goodbye"
 	exit
+else
 fi
+
+
 
 echo "do you want continue to watching your sapling grow yes/no"
  if [ $response == "yes" ]; then
@@ -203,6 +269,7 @@ echo "do you want continue to watching your sapling grow yes/no"
 elif [ $response == "no" ] then
 	echo "Goodbye"
 	exit
+else
 fi
 
  
