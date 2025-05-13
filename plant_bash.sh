@@ -260,19 +260,11 @@ echo "do you want continue to watching your sapling grow yes/no"
  if [ $response == "yes" ]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [ $response == "no" ] then
-echo "do you want continue to watching your sapling grow yes/no"
-
-
 
 echo " Day 21: Plant is 34cm and 34 leafs"
-
-echo "do you want continue to watching your sapling grow yes/no"
-if [ $response == "yes" ]; then
-	echo "After a day your plant has grown 2cms and your plant has grown 2 leaves"
-	echo "Goodbye"
-	exit
-else
-fi
+sleep 2
+echo "thanks for playing our game"
+exit
 
 
 
