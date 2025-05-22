@@ -85,7 +85,7 @@ elif [[ $response == "no" ]]; then
 	exit
 fi
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then 
 	echo "After a day your plant has grown 2cms and your plant has grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -95,7 +95,7 @@ fi
 
 echo " Day 7: Plant is 6cm and 8 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -104,7 +104,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 8: Plant is 8cm and 10 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -113,7 +113,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 9: Plant is 10cm and 12 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -123,7 +123,7 @@ fi
 
 echo " Day 10: Plant is 12 cm and 14 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 	elif [[ $response == "no" ]]; then
@@ -132,7 +132,7 @@ if [[ $response == "yes" ]]; then
 fi
 echo " Day 11: Plant is 14 cm and 16 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 	elif [[ $response == "no" ]]; then
@@ -143,7 +143,7 @@ fi
 
 echo " Day 12: Plant is 16cm and 18 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -153,7 +153,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 13: Plant is 18cm and 20 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -163,7 +163,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 14: Plant is 20cm and 22 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -174,7 +174,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 15: Plant is 22cm and 24 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -185,7 +185,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 16: Plant is 24cm and 26 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -196,7 +196,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 17: Plant is 26cm and 28 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -205,7 +205,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 18: Plant is 28cm and 30 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -214,7 +214,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 19: Plant is 30cm and 32 leafs"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
@@ -224,7 +224,7 @@ elif [[ $response == "no" ]]; then
 fi
 echo " Day 20: Plant is 32cm your plant has grown it's final leaves 34"
 
-echo "do you want continue to watching your sapling grow yes/no"
+read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then
 	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 elif [[ $response == "no" ]]; then
