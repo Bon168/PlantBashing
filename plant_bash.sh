@@ -234,8 +234,12 @@ fi
 echo " Day 21: Plant is 34cm and 34 leafs"
 sleep 2
 
-echo "thanks for playing our game would you like to play again(yes or no)"
+read -p "thanks for playing our game would you like to play again(yes or no)"
 if [[ $response == "yes" ]]; then
-	echo "Restarting..."
+	echo "Restarting"
+	exec "$0"
+elif [[ $response == "no" ]]; then
 	exit
+else
+echo "leaving the game"	
 fi
