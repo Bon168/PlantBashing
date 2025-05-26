@@ -74,16 +74,26 @@ echo "Day 5 Nohting happened"
 sleep 2
 echo "Day 6 Your plant has grown into a sapling"
 
-echo "do you want continue to watching your sapling grow yes/no"
 
 
 
-if [[ $response == "yes" ]]; then 
-	echo "Okay you are doing your sapling justice"
-elif [[ $response == "no" ]]; then
-	echo "your sapling is lost to time you lose"
-	exit
+day=7
+height=6
+leaves=8
+read -p  "do you want continue to watching your sapling grow yes/no"
+echo "day $day: Plant is ${Height}cm and has $leaves leaves."
+((day++))
+((height+=2))
+((leaves+=2))
+sleep 1
+
+if [[ $day -gt 21 ]]; then
+	break
 fi
+else "Please type yes or no"
+fi
+done
+
 
 read -p "do you want continue to watching your sapling grow yes/no"
 if [[ $response == "yes" ]]; then 
@@ -237,7 +247,7 @@ sleep 2
 read -p "thanks for playing our game would you like to play again(yes or no)"
 if [[ $response == "yes" ]]; then
 	echo "Restarting"
-	exec "$0"
+	
 elif [[ $response == "no" ]]; then
 	exit
 else
