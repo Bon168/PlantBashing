@@ -1,4 +1,5 @@
 #!/bin/bash
+plant_name="Morpheus"
 echo "Hello welcome"
 echo "What is your name"
 read name
@@ -77,20 +78,32 @@ echo "Day 6 Your plant has grown into a sapling"
 
 
 
-day=7
-height=6
-leaves=8
-read -p  "do you want continue to watching your sapling grow yes/no"
-echo "day $day: Plant is ${Height}cm and has $leaves leaves."
-((day++))
+
+
+ while [[ $day -gt 21 ]]; do
+ 	echo "day $day: Plant is ${height}cm and has ${leaves} leaves."
+	read -p "Do you want to keep watching your plant grow? (yes or no):"
+	if [[ reaspone =="no" ]]; then
+		echo "you have failed your plant"
+		break
+	elif [[ reaspone == "yes" ]]; then 
+		echo "Please answer yes or no"
+		continue
+	fi
+
+	((day++))
 ((height+=2))
 ((leaves+=2))
 sleep 1
+done
 
-if [[ $day -gt 21 ]]; then
-	break
-fi
-else "Please type yes or no"
+
+	
+
+
+
+
+
 fi
 done
 
@@ -245,6 +258,7 @@ echo " Day 21: Plant is 34cm and 34 leafs"
 sleep 2
 
 read -p "thanks for playing our game would you like to play again(yes or no)"
+echo "Welcome back $name"
 if [[ $response == "yes" ]]; then
 	echo "Restarting"
 	
