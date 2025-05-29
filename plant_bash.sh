@@ -238,13 +238,13 @@ echo " Day 19: Plant is 30cm and 32 leafs"
 continueGrowing
 
 
-fi
+
 echo " Day 20: Plant is 32cm your plant has grown it's final leaves 34"
 
 continueGrowing
 
 
-fi
+
 echo " Day 21: Plant is 34cm and 34 leafs"
 sleep 2 remember this
 
