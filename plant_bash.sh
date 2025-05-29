@@ -19,17 +19,13 @@ continueGrowing() {
 		echo "Goodbye"
 		user_waiting=false
 	fi
-	return $user_waiting
+	#return $user_waiting
 }
 
 
 #Main game loop will run so long as $play_again is true
-while [[ $play_again ]]; do
-	#statements
+###fi
 
-	#right near the end, if the player says no to playing again, then we 
-	#change the "$play_again" variable to false.
-done
 
 
 
@@ -125,8 +121,7 @@ echo "Day 5 nothing happened"
 sleep 2
 echo "Day 6 Your plant has grown into a sapling"
 
-if
-done
+
 
 
 continueGrowing
@@ -266,29 +261,12 @@ echo " Day 19: Plant is 30cm and 32 leafs"
 
 continueGrowing
 
-echo " Day 11: Plant is 14 cm and 16 leafs"
 
-read -p "do you want continue to watching your sapling grow yes/no"
-if [[ $response == "yes" ]]; then
-	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
-	elif [[ $response == "no" ]]; then
-	echo "Goodbye"
-	exit
-
-fi
 fi
 echo " Day 20: Plant is 32cm your plant has grown it's final leaves 34"
 
 continueGrowing
 
-echo " Day 11: Plant is 14 cm and 16 leafs"
-
-read -p "do you want continue to watching your sapling grow yes/no"
-if [[ $response == "yes" ]]; then
-	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
-	elif [[ $response == "no" ]]; then
-	echo "Goodbye"
-	exit
 
 fi
 echo " Day 21: Plant is 34cm and 34 leafs"
