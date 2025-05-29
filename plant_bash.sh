@@ -222,41 +222,17 @@ echo " Day 17: Plant is 26 cm and 28 leafs"
 
 continueGrowing
 
+
+continueGrowing
+
 echo " Day 18: Plant is 28 cm and 30 leafs"
 
-read -p "do you want continue to watching your sapling grow yes/no"
-if [[ $response == "yes" ]]; then
-	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
-	elif [[ $response == "no" ]]; then
-	echo "Goodbye"
-	exit
 
-fi
+
 
 continueGrowing
 
-echo " Day 11: Plant is 14 cm and 16 leafs"
 
-read -p "do you want continue to watching your sapling grow yes/no"
-if [[ $response == "yes" ]]; then
-	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
-	elif [[ $response == "no" ]]; then
-	echo "Goodbye"
-	exit
-
-fi
-continueGrowing
-
-echo " Day 11: Plant is 14 cm and 16 leafs"
-
-read -p "do you want continue to watching your sapling grow yes/no"
-if [[ $response == "yes" ]]; then
-	echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
-	elif [[ $response == "no" ]]; then
-	echo "Goodbye"
-	exit
-
-fi
 echo " Day 19: Plant is 30cm and 32 leafs"
 
 continueGrowing
