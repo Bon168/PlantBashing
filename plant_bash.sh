@@ -77,12 +77,16 @@ fi
 
 if [[ $response == "yes" ]]; then
 	#echo " sleep 1 day"
-fi
+elif
 
-if [[ $response == "no" ]]; then
+else [[ $response == "no" ]]; then
 	echo "Goodbye"
 	exit
+
 fi
+
+
+
 
 echo "your seed will take 3 days to grow"
 #sleep 1
@@ -96,17 +100,20 @@ echo "Day 2 Nothing happened"
 #sleep 1
 echo "Day 3 seed germinated overnight"
 #sleep 1
-read -p "Do you want to  sleep a 1 day or leave now ( sleep/leave)" response 
+read -p "Do you want to wait a 1 day or leave now (wait/leave)" response 
 
-if [[ $response == "sleep" ]]; then
+if [[ $response == "wait" ]]; then
 	echo "your young plant shall grow soon"
 
-fi
-
-if [[ $response == "leave" ]]; then
+elif  [[ $response == "leave" ]]; then
 	echo "All that for nothing"
 	exit
+else
+	echo "Sorry, that wasnt a valid input... please try again."
 fi
+
+
+
 
 echo "your plant has grown into a sapling"
 echo " Day 1 seed planted"
