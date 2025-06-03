@@ -12,20 +12,26 @@ user_waiting=false
 #
 
 growPlant() {
-	#edit the variables for your plant in here when needed.
+	height=6
+	leaves=8
+	day=7
+	day=$((day +1))
+	height=$((height +2))
+	leaves=$((leaves +2))
+
 }
 
 continueGrowing() {
-	read -p "do you want continue to watching your sapling grow yes/no" user_input
+	read -p "do you want continue to watching your sapling grow (yes/no):" user_input
 	if [[ $user_input == "yes" ]]; then
 		echo "After a day your plant has grown 2cm and your plant has now grown 2 leaves"
 		user_waiting=true
 		growPlant
-		elif [[ $user_input == "no" ]]; then
+	elif [[ $user_input == "no" ]]; then
 		echo "Goodbye"
 		user_waiting=false
 	fi
-	return $user_waiting
+	return $((user_waiting))
 } 
 
 
@@ -68,18 +74,17 @@ if [[ "$response" == "yes" ]]; then
 elif [[ "$response" == "no" ]]; then
 	echo "Good bye have a great day $name"
 else
-	echo "Sorry, that wasnt a valid input... please try again."
+	echo "Sorry, that wasnt a valid input... please try again." 
 fi
 
 
 
-#read -p "Do you want to  sleep for your seed to grow? (yes/no): " response
+read -p "Do you want to wait for your seed to grow? (yes/no): " response
 
 if [[ $response == "yes" ]]; then
-	#echo " sleep 1 day"
+	echo " You sleep for  1 day"
 elif
-
-else [[ $response == "no" ]]; then
+ [[ $response == "no" ]]; then
 	echo "Goodbye"
 	exit
 
@@ -100,7 +105,7 @@ echo "Day 2 Nothing happened"
 #sleep 1
 echo "Day 3 seed germinated overnight"
 #sleep 1
-read -p "Do you want to wait a 1 day or leave now (wait/leave)" response 
+read -p "Do you want to wait a 1 day or leave now (wait/leave)" 
 
 if [[ $response == "wait" ]]; then
 	echo "your young plant shall grow soon"
@@ -115,13 +120,7 @@ fi
 
 
 
-echo "your plant has grown into a sapling"
-echo " Day 1 seed planted"
-#sleep 2
-echo "Day 2 Nothing happened"
-#sleep 2
-echo "Day 3 seed germinated overnight"
-#sleep 2 
+
 echo "Day 4 Nothing happened"
 #sleep 2
 echo "Day 5 nothing happened"
@@ -129,6 +128,10 @@ echo "Day 5 nothing happened"
 echo "Day 6 Your plant has grown into a sapling"
 
 
+
+continueGrowing
+	echo "returned the value from the function"
+	echo $user_waiting
 
 
 continueGrowing
@@ -197,10 +200,10 @@ echo " Day 21: Plant is 34cm and 34 leafs"
 #sleep 1
 
 
-read -p "thanks for playing our game would you like to play again(yes or no)"
-echo "Welcome back $name"
+read -p "thanks for playing our game would you like to play again(yes or no)" response
 if [[ $response == "yes" ]]; then
-	echo "Restarting"
+	echo "Welcome back $name
+	Restarting"
 	
 elif [[ $response == "no" ]]; then
 	exit
