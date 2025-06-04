@@ -29,6 +29,7 @@ continueGrowing() {
 		growPlant
 	elif [[ $user_input == "no" ]]; then
 		echo "Goodbye"
+		exit
 		user_waiting=false
 	fi
 	return $((user_waiting))
@@ -73,6 +74,7 @@ if [[ "$response" == "yes" ]]; then
 	echo "$name you have dug a hole and planted a small seed of the size of 3"
 elif [[ "$response" == "no" ]]; then
 	echo "Good bye have a great day $name"
+	exit
 else
 	echo "Sorry, that wasnt a valid input... please try again." 
 fi
