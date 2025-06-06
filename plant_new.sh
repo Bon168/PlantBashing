@@ -201,10 +201,10 @@ while [[ "$play_again"=="yes" ]]; do
 
 
 	read -p "thanks for playing our game would you like to play again(yes/no):" play_again
-	if [[ $play_again=="yes" ]]; do
+	if [[ $play_again == "yes" ]]; then
 		play_again=true
-
-	elif [[ $response=="no" ]]; do
+    
+	elif [[ $response == "no" ]]; then
 		play_again=false
 	echo "leaving the game thanks for playing"
 	exit	
