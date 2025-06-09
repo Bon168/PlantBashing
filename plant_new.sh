@@ -36,7 +36,25 @@ continueGrowing() {
 } 
 
 
+nameplantcode()  {
+read -p "Would you like to name your plant? (yes/no):" response
+if [[ "$response" = "yes" ]] then
+	read plant_name
+else
+	plant_name="Morpheus"
+	echo "your plant default name is Morpheus"
+fi
+}
 
+nameplantcode2()  {
+read -p "Would you like to change your plant name? (yes/no):" response
+if [[ "$response" = "yes" ]] then
+	read plant_name
+else
+	plant_name="Morpheus"
+	echo "your plant default name is Morpheus"
+fi
+}
 #Main game loop will run so long as $play_again is true
 ###fi
 
@@ -65,6 +83,7 @@ read name
 echo "Welcome $name to our planting simulator"
 #sleep 3
 
+nameplantcode
 
 play_again="yes"
 
@@ -85,13 +104,7 @@ while [[ "$play_again"=="yes" ]]; do
 	fi
 
 
-read -p "Would you like to name your plant? (yes/no):" response
-if [[ "$response" = "yes" ]] then
-	read plant_name
-else
-	plant_name="Morpheus"
-	echo "your plant default name is Morpheus"
-fi
+nameplantcode2
 
 	read -p "Do you want to wait for your seed to grow? (yes/no): " response
 
