@@ -2,9 +2,11 @@
 
 #all variables go here
 #
-
+plant_named=false
 play_again=true
 user_waiting=false
+first_play=true
+plant_name="Morpheus"
 
 #define all functions here
 #
@@ -37,13 +39,31 @@ continueGrowing() {
 
 
 nameplantcode()  {
-read -p "Would you like to name your plant? (yes/no):" response
-if [[ "$response" = "yes" ]] then
-	read plant_name
-else
-	plant_name="Morpheus"
-	echo "your plant default name is Morpheus"
-fi
+   if [ "$first_play" = true ]; then
+        read -p "Would you like to name your plant? (yes/no): " response
+        response="${response,,}"
+
+        if [[ "$response" == "yes" || "$response" == "y" ]]; then
+            read -p "Enter your plant's name: " plant_name
+            echo "Your plant is now named $plant_name."
+        else
+            plant_name="Morpheus"
+            echo "Your plant's default name is Morpheus."
+        fi
+        plant_named=true
+        first_play=false
+
+    elif [ "$first_play" = false ] && [ "$plant_named" = true ]; then
+        read -p "Would you like to change your plant's name? (yes/no): " rename_choice
+        rename_choice="${rename_choice,,}"
+
+        if [[ "$rename_choice" == "yes" || "$rename_choice" == "y" ]]; then
+            read -p "Enter your new plant name: " plant_name
+            echo "Your plant is now renamed to $plant_name."
+        else
+            echo "Your plant name remains: $plant_name."
+        fi
+    fi
 }
 
 nameplantcode2()  {
