@@ -2,7 +2,7 @@
 
 #all variables go here
 #
-#
+
 play_again=true
 user_waiting=false
 
@@ -65,7 +65,9 @@ read name
 echo "Welcome $name to our planting simulator"
 #sleep 3
 
+
 play_again="yes"
+
 
 while [[ "$play_again"=="yes" ]]; do
 	echo "Time to begin our planting simulator"
@@ -79,9 +81,17 @@ while [[ "$play_again"=="yes" ]]; do
 		exit
 	else
 		echo "Sorry, that wasnt a valid input... please try again." 
+
 	fi
 
 
+read -p "Would you like to name your plant? (yes/no):" response
+if [[ "$response" = "yes" ]] then
+	read plant_name
+else
+	plant_name="Morpheus"
+	echo "your plant default name is Morpheus"
+fi
 
 	read -p "Do you want to wait for your seed to grow? (yes/no): " response
 
